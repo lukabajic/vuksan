@@ -1,3 +1,6 @@
+// Mokovani podaci
+// I ovako bi izgledale rute ka bekendu
+
 const teachers = [
   {
     id: 1,
@@ -178,8 +181,6 @@ export function getListOfStudents() {
   //   console.error('Error fetching list of students:', error);
   //   return { data: [] };
   // });
-
-
 
   return Promise.resolve({
     data: students
@@ -610,10 +611,7 @@ export function getGradesByStudent(studentId) {
 }
 
 export function getTeacher(teacherId) {
-  console.log(teachers)
-  console.log(teacherId)
   const teacher = teachers.find(teacher => teacher.id === Number(teacherId));
-  console.log(teacher)
   return Promise.resolve({
     data: teacher,
   });

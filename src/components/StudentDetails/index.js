@@ -18,9 +18,12 @@ function StudentDetails() {
     });
   }, [studentId]);
 
+  // Izracunavanje prosecne ocene
   const calculateAverageGrade = () => {
-    if (grades.length === 0) return 0;
+    if (grades.length === 0) return 0; // ako nema ocena prosek je 0
 
+    // ako ima izracunaj
+    // ukupan zbir ocena podeljeno sa brojem ocena
     const totalGrade = grades.reduce((sum, grade) => sum + grade.grade, 0);
     return (totalGrade / grades.length).toFixed(2);
   };

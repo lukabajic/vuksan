@@ -7,11 +7,14 @@ function Sidebar({ isOpen, toggleSidebar }) {
     <div className={`sidebar ${isOpen ? 'open' : ''}`}>
       <ul>
         <li>
+          {/* klik na link komponentu vodi na to sta se prosledi */}
           <Link to="/" onClick={toggleSidebar}>
             Dashboard
           </Link>
         </li>
         <li>
+          {/* onClick mora da se ode na stranicu */}
+          {/* i da se zatvori sidebare */}
           <Link to="/teachers" onClick={toggleSidebar}>
             Teachers
           </Link>
