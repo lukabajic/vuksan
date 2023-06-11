@@ -5,6 +5,7 @@ import StudentList from './components/StudentList';
 import Dashboard from './components/Dashboard';
 import TeacherDetails from './components/TeacherDetails';
 import StudentDetails from './components/StudentDetails';
+import ErrorPage from './components/ErrorPage';
 
 function AppRouter() {
   return (
@@ -14,6 +15,7 @@ function AppRouter() {
       <Route path="/students" exact component={StudentList} />
       <Route path="/teachers/:teacherId" component={TeacherDetails} />
       <Route path="/students/:studentId" component={StudentDetails} />
+      <Route component={ErrorPage} />
     </React.Fragment>
   );
 }
