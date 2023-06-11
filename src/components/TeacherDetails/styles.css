@@ -1,0 +1,55 @@
+.teacher-details-container {
+  margin: 20px;
+}
+
+.teacher-info {
+  margin-bottom: 20px;
+}
+
+.teacher-info h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.teacher-info p {
+  margin-bottom: 5px;
+}
+
+.grades-table-container {
+  margin-top: 20px;
+}
+
+.grades-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.grades-table th,
+.grades-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.grades-table th {
+  background-color: #f5f5f5;
+}
+
+.grades-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.grades-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.grades-table a {
+  color: #00adb5;
+  text-decoration: none;
+}
+
+.grades-table a:hover {
+  text-decoration: underline;
+}

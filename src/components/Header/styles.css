@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #00adb5;
+  color: #000000;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box-shadow */
+}
+
+.header__burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.header__burger-line {
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  transition: transform 0.3s ease;
+}
+
+.header__burger-line.active:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.header__burger-line.active:nth-child(2) {
+  opacity: 0;
+}
+
+.header__burger-line.active:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -7px);
+}
+
+.header__title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
