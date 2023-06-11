@@ -52,7 +52,7 @@ function TeacherDetails() {
               <tr key={grade.id}>
                 <td>{grade.id}</td>
                 <td>
-                  <Link to={`/student/${grade.studentId}`}>{grade.studentName}</Link>
+                  <Link to={`/students/${grade.studentId}`}>{grade.studentName}</Link>
                 </td>
                 <td>{grade.grade}</td>
               </tr>
