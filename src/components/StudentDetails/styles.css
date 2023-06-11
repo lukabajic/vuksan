@@ -3,36 +3,31 @@
 }
 
 .student-info {
-  background-color: #f5f5f5;
-  padding: 20px;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
 
 .student-info h2 {
-  color: #333;
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
+.student-info p {
+  margin-bottom: 5px;
+}
+
 .grades-table {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  overflow: hidden;
+  margin-top: 20px;
 }
 
 .grades-table h2 {
-  padding: 20px;
-  background-color: #f5f5f5;
-  margin: 0;
-  color: #333;
-  font-size: 24px;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .grades-table table {
   width: 100%;
   border-collapse: collapse;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .grades-table th,
@@ -52,4 +47,17 @@
 
 .grades-table tbody tr:hover {
   background-color: #f1f1f1;
+}
+
+.grades-table a {
+  color: #00adb5;
+  text-decoration: none;
+}
+
+.grades-table a:hover {
+  text-decoration: underline;
+}
+
+.grades-table p {
+  margin-top: 10px;
 }

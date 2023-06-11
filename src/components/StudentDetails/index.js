@@ -48,28 +48,32 @@ function StudentDetails() {
       </div>
       <div className="grades-table">
         <h2>Grades</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Subject</th>
-              <th>Grade</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            {grades.map(grade => (
-              <tr key={grade.id}>
-                <td>{grade.id}</td>
-                <td>{grade.subject}</td>
-                <td>{grade.grade}</td>
-                <td>
-                  <Link to={`/teachers/${grade.teacherId}`}>See Teacher</Link>
-                </td>
+        {grades.length ? (
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Subject</th>
+                <th>Grade</th>
+                <th>Actions</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {grades.map(grade => (
+                <tr key={grade.id}>
+                  <td>{grade.id}</td>
+                  <td>{grade.subject}</td>
+                  <td>{grade.grade}</td>
+                  <td>
+                    <Link to={`/teachers/${grade.teacherId}`}>See Teacher</Link>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        ) : (
+          <p>No grades available for this student.</p>
+        )}
       </div>
     </div>
   );
